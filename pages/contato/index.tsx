@@ -1,13 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+import styles from "../../styles/Home.module.css";
 
-import Hero from "../components/home/hero";
-import Contact from "../components/home/contact";
+import Contact from "../../components/home/contact";
 
-import styles from "../styles/Home.module.css";
-
-const Home: NextPage = () => {
+const Contato: NextPage = () => {
     return (
         <div className={styles.container}>
             <Head>
@@ -20,11 +17,10 @@ const Home: NextPage = () => {
             </Head>
 
             <main className={styles.main}>
-                <Hero />
                 <Contact />
             </main>
         </div>
     );
 };
 
-export default Home;
+export default Contato;
