@@ -154,6 +154,7 @@ const Social = styled.aside`
         li {
             padding: 0px 40px 0px 0px;
             width: 170px;
+
             a {
                 display: flex;
                 filter: grayscale(100%);
