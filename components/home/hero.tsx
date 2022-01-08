@@ -15,7 +15,7 @@ const Hero = () => {
             <Slogan>
                 <h2>Dê match com o professor de inglês</h2>
             </Slogan>
-            <Button>Botão</Button>
+            <Button data-test="contact-button">Botão</Button>
         </HeroSection>
     );
 };

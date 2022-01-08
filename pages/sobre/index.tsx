@@ -5,7 +5,7 @@ import styles from "../../styles/Home.module.css";
 
 const Sobre: NextPage = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} data-test="comp-sobre">
             <Head>
                 <title>Kalloo English School</title>
                 <meta
