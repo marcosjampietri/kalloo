@@ -10,11 +10,11 @@ body {
     /*     padding: 0; */
     /*     margin: 0; */
 
-    /*     letter-spacing: 0.15em; */
+    letter-spacing: 0.07em;
     line-height: 1;
     text-decoration: none;
     list-style: none;
-
+    font-weight: 200;
     box-sizing: border-box;
 }
 

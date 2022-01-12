@@ -3,10 +3,12 @@ import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 
 import Contact from "../../components/home/contact";
+import List from "./list";
+import Map from "./map";
 
 const Contato: NextPage = () => {
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Kalloo English School</title>
                 <meta
@@ -16,7 +18,9 @@ const Contato: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles.main}>
+            <main>
+                <List />
+                <Map />
                 <Contact />
             </main>
         </div>

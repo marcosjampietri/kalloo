@@ -38,7 +38,9 @@ const AppChild = ({ Component, pageProps }: AppProps) => {
 
     const dispatch = useDispatch();
 
-    const { ModOn } = useTypedSelector((state: AppState) => state.mod);
+    const { ModOn, AllowMod } = useTypedSelector(
+        (state: AppState) => state.mod
+    );
 
     console.log(`Modal está ${ModOn}`);
 
@@ -55,7 +57,7 @@ const AppChild = ({ Component, pageProps }: AppProps) => {
             {/*<GlobalStyle /> */}
             <NextChild onMouseLeave={() => dispatch(modOnAction())}>
                 <NavBar />
-                {ModOn && <Modal />}
+                {ModOn && AllowMod && <Modal />}
 
                 <StyledDiv>
                     <Transition
