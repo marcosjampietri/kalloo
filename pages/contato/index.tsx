@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import styled from "styled-components";
+
 import styles from "../../styles/Home.module.css";
 
 import Contact from "../../components/home/contact";
@@ -18,13 +20,19 @@ const Contato: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main>
+            <Main>
                 <List />
                 <Map />
                 <Contact />
-            </main>
+            </Main>
         </div>
     );
 };
 
 export default Contato;
+
+const Main = styled.main`
+    // width: 100vw;
+
+    overflow: hidden;
+`;

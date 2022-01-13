@@ -17,9 +17,9 @@ import { below } from "../../styles/breakpoints";
     /* import { Reveal } from "../reveal"; */
 }
 
-const Shop = () => {
+const Links = () => {
     return (
-        <ShopSt>
+        <LinksSt>
             <Margin>
                 <div>
                     {/*                     <Reveal> */}
@@ -79,19 +79,19 @@ const Shop = () => {
                             </Social>
                         </BoxT>
                         <BoxI>
-                            <ServImg src="/shop.jpg" />
+                            <ServImg src="https://images.unsplash.com/photo-1610552254576-9500a3e99999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1917&q=80" />
                         </BoxI>
                     </Outline>
                     {/*                     </Reveal> */}
                 </div>
             </Margin>
-        </ShopSt>
+        </LinksSt>
     );
 };
 
-export default Shop;
+export default Links;
 
-const ShopSt = styled.div`
+const LinksSt = styled.div`
     padding: 10vh 0;
 
     background-color: hsla(220, 10%, 95%, 1);
@@ -191,7 +191,7 @@ const ServImg = styled.img`
     transform: translateX(-11.5%);
 
     object-fit: cover;
-    object-position: 50% 20%;
+    object-position: 50% 70%;
 
     box-shadow: 5px 12px 30px hsla(0, 0%, 0%, 0.99);
 `;

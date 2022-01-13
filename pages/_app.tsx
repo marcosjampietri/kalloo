@@ -55,7 +55,11 @@ const AppChild = ({ Component, pageProps }: AppProps) => {
     return (
         <>
             {/*<GlobalStyle /> */}
-            <NextChild onMouseLeave={() => dispatch(modOnAction())}>
+            <NextChild
+                onMouseLeave={() =>
+                    AllowMod && !ModOn && dispatch(modOnAction())
+                }
+            >
                 <NavBar />
                 {ModOn && AllowMod && <Modal />}
 

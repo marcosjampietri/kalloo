@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import styles from "../../styles/Home.module.css";
+import Levels from "./levels";
 
 const Cursos: NextPage = () => {
     return (
@@ -15,7 +16,9 @@ const Cursos: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles.main}>CURSOS</main>
+            <main className={styles.main}>
+                <Levels />
+            </main>
         </div>
     );
 };

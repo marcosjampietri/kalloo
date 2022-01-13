@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import styled from "styled-components";
 
 import Faq from "./faq";
 import styles from "../../styles/Home.module.css";
@@ -16,11 +17,13 @@ const Sobre: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles.main}>
+            <Main className={styles.main}>
                 <Faq />
-            </main>
+            </Main>
         </div>
     );
 };
 
 export default Sobre;
+
+const Main = styled.main``;

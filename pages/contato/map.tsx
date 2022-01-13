@@ -4,7 +4,7 @@ const Map = () => {
     return (
         <Google>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.033644017586!2d-0.13414438422849098!3d51.5492820796421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b05abadf5d7%3A0x4033a7dfcae1179c!2sTorriano%20Ave%2C%20London!5e0!3m2!1sen!2suk!4v1626191292285!5m2!1sen!2suk"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28872.507260894465!2d-46.64578941548773!3d-23.60177493306341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2ea7889029%3A0x4082ce660c9f6a4!2sShopping%20Metro%20Santa%20Cruz!5e0!3m2!1sen!2suk!4v1642081410125!5m2!1sen!2suk"
                 allowFullScreen
                 loading="lazy"
             ></iframe>

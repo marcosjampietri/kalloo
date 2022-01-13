@@ -9,7 +9,9 @@ const Modal = () => {
 
     return (
         <>
-            <ModalSt onClick={() => dispatch(modOffAction())}>MODAAALL</ModalSt>
+            <ModalSt onClick={() => dispatch(modOffAction())}>
+                <div>MODAL</div>
+            </ModalSt>
         </>
     );
 };
@@ -29,5 +31,3 @@ const ModalSt = styled.div`
     justify-content: center;
     align-items: center;
 `;
-
-const Container = styled.div``;

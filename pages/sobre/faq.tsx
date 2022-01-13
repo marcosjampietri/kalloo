@@ -15,6 +15,10 @@ const Faq = () => {
             answer: 'Porque acreditamos que a única forma de reter um aluno para que ele possa ter consistência e, consequentemente, evoluir, é promover encontros em que ele se sinta confortável e motivado.\nComo funciona a plataforma colaborativa?\nÉ simples. Todo o nosso material é editável e compartilhado com todos os professores da Kalloo, que podem adicionar observações, editar exercícios, atualizar ou substituir textos e acrescentar novas atividades. Assim, nosso conteúdo estará em constante evolução e atualização.\n"Ao incentivar os usuários a avaliar, modificar e até criar conteúdos novos para as aulas, a gente passa a ter uma plataforma viva, que melhora e se atualiza a cada aula dada.” - Lucas Santoro, cofundador da Kalloo',
         },
         {
+            question: "Como funciona a plataforma colaborativa?",
+            answer: 'É simples. Todo o nosso material é editável e compartilhado com todos os professores da Kalloo, que podem adicionar observações, editar exercícios, atualizar ou substituir textos e acrescentar novas atividades. Assim, nosso conteúdo estará em constante evolução e atualização.\n"Ao incentivar os usuários a avaliar, modificar e até criar conteúdos novos para as aulas, a gente passa a ter uma plataforma viva, que melhora e se atualiza a cada aula dada.” - Lucas Santoro, cofundador da Kalloo',
+        },
+        {
             question: "Por que apostamos em uma plataforma colaborativa?",
             answer: "Porque acreditamos que é possível criar e aperfeiçoar um conteúdo didático a várias mãos, de forma que cada um contribui como quiser ou puder. Nossa ideia é que os professores possam sugerir mudanças e melhorias no nosso material, assim como é feito em ambientes colaborativos como o Waze ou o Wikipedia, por exemplo. Dessa forma, o material é enriquecido a cada dia com textos atualizados, atividades extras, instruções e sugestões novas para as dinâmicas de aula, correções e atualizações dos conteúdos já existentes.",
         },
@@ -25,6 +29,15 @@ const Faq = () => {
             <FaqSection>
                 <div>
                     <h1>FAQ</h1>
+                    <h4>
+                        Criada com o propósito de trazer inovação para o ensino
+                        da língua inglesa, a Kalloo é a primeira escola de
+                        inglês do Brasil a desenvolver uma plataforma
+                        colaborativa de aprendizado, com material pedagógico
+                        totalmente interativo, combinada a um sistema que traça
+                        o perfil dos alunos com a finalidade de escolher os
+                        melhores professores.
+                    </h4>
                     {faqs.map((item, index) => (
                         <Item key={index}>
                             <h2>{item.question}</h2>
