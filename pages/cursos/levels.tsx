@@ -105,20 +105,25 @@ const Table = styled.ul`
     }
 `;
 const Item = styled.li`
+    padding: 10px;
+
     border: 1px solid hsla(0, 0%, 0%, 0.1);
 
     display: flex;
+    flex-wrap: wrap;
 
     h2 {
-        width: 25%;
+        flex: 1 1 80px;
+        min-width: 150px;
     }
     h4 {
-        width: 75%;
+        flex: 1 1 490px;
+        padding: 12px;
+        // width: 70%;
     }
     h2,
     h4 {
         margin: 8px;
-        padding: 30px;
         white-space: pre-line;
         line-height: 1.5em;
         text-align: justify;
