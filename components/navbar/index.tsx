@@ -6,12 +6,12 @@ import { Margin } from "../../styles/globalSC";
 const Navbar = () => {
     const links = [
         {
-            name: "CURSOS",
-            path: "/cursos",
-        },
-        {
             name: "SOBRE",
             path: "/sobre",
+        },
+        {
+            name: "O CURSO",
+            path: "/curso",
         },
         {
             name: "CONTATO",
