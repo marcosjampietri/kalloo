@@ -20,7 +20,6 @@ const Google = styled.div`
     margin: 0px auto;
 
     iframe {
-        box-shadow: inset 2px 2px 20px red;
         width: 100%;
         height: 100%;
     }

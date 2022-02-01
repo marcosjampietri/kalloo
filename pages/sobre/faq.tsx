@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Margin } from "../../styles/globalSC";
+
 const Faq = () => {
     const faqs = [
         {
@@ -26,33 +28,24 @@ const Faq = () => {
 
     return (
         <>
-            <FaqSection>
-                <div>
-                    <h1>FAQ</h1>
-                    <h4>
-                        Criada com o propósito de trazer inovação para o ensino
-                        da língua inglesa, a Kalloo é a primeira escola de
-                        inglês do Brasil a desenvolver uma plataforma
-                        colaborativa de aprendizado, com material pedagógico
-                        totalmente interativo, combinada a um sistema que traça
-                        o perfil dos alunos com a finalidade de escolher os
-                        melhores professores.
-                    </h4>
+            <Section>
+                <Margin>
+                    <h2>FAQ</h2>
                     {faqs.map((item, index) => (
                         <Item key={index}>
                             <h2>{item.question}</h2>
                             <h4>{item.answer}</h4>
                         </Item>
                     ))}
-                </div>
-            </FaqSection>
+                </Margin>
+            </Section>
         </>
     );
 };
 
 export default Faq;
 
-const FaqSection = styled.section`
+const Section = styled.section`
     position: relative;
     width: 100vw;
     height: 100%;
@@ -63,22 +56,14 @@ const FaqSection = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    div {
-        border: 1px solid black;
-        max-width: 1200px;
-        margin: 30px auto;
-        padding: 10px;
-    }
 `;
 const Item = styled.div`
-    border: 1px solid black;
-    margin: 10px;
-
+    border: 1px solid hsla(0, 0%, 50%, 0.3);
     h2 {
         background-color: hsla(0, 0%, 50%, 0.1);
     }
     h4 {
+        text-align: justify;
     }
     h2,
     h4 {
@@ -86,6 +71,5 @@ const Item = styled.div`
         padding: 30px;
         white-space: pre-line;
         line-height: 1.5em;
-        text-align: justify;
     }
 `;

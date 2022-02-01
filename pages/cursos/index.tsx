@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import styles from "../../styles/Home.module.css";
 import Levels from "./levels";
+import Header from "./header";
 
 const Cursos: NextPage = () => {
     return (
-        <div className={styles.container} data-test="comp-cursos">
+        <div data-test="comp-cursos">
             <Head>
                 <title>Kalloo English School</title>
                 <meta
@@ -16,7 +16,8 @@ const Cursos: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles.main}>
+            <main>
+                <Header />
                 <Levels />
             </main>
         </div>

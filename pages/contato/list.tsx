@@ -19,7 +19,7 @@ import { below } from "../../styles/breakpoints";
 
 const Links = () => {
     return (
-        <LinksSt>
+        <Section id="Contact">
             <Margin>
                 <div>
                     {/*                     <Reveal> */}
@@ -42,7 +42,9 @@ const Links = () => {
                                     <div>
                                         <FiMail />
                                     </div>
-                                    <h5>kalloo@gmail.com</h5>
+                                    <a href="mailto:kalloo@gmail.com">
+                                        <h5>kalloo@gmail.com</h5>
+                                    </a>
                                 </Line>
                                 <Line>
                                     <div>
@@ -85,14 +87,17 @@ const Links = () => {
                     {/*                     </Reveal> */}
                 </div>
             </Margin>
-        </LinksSt>
+        </Section>
     );
 };
 
 export default Links;
 
-const LinksSt = styled.div`
-    padding: 10vh 0;
+const Section = styled.section`
+    width: 100%;
+    overflow: hidden;
+
+    padding-top: 100px;
 
     background-color: hsla(220, 10%, 95%, 1);
 
@@ -117,7 +122,7 @@ const Outline = styled.div`
     outline: 2px solid hsla(0, 0%, 0%, 0.1);
     outline-offset: -40px;
 
-    padding: calc(25px + 2.5vw) 0px;
+    padding: 35px 0px;
 `;
 const BoxT = styled.div`
     flex: 1 1 481px;
@@ -133,7 +138,6 @@ const Text = styled.div`
     h4 {
         padding: 0px 0px 25px 0px;
         font-size: 1.3em;
-        font-family: Neon Heavy;
     }
 
     p {

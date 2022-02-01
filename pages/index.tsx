@@ -3,13 +3,12 @@ import Head from "next/head";
 import Image from "next/image";
 
 import Hero from "../components/home/hero";
-import Contact from "../components/home/contact";
-
-import styles from "../styles/Home.module.css";
+import Items from "../components/home/Items";
+import List from "../pages/contato/list";
 
 const Home: NextPage = () => {
     return (
-        <div className={styles.container} data-test="comp-home">
+        <div data-test="comp-home">
             <Head>
                 <title>Kalloo English School</title>
                 <meta
@@ -19,9 +18,10 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles.main}>
+            <main>
                 <Hero />
-                <Contact />
+                <Items />
+                <List />
             </main>
         </div>
     );

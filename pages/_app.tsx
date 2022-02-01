@@ -1,7 +1,8 @@
 import type { AppProps } from "next/app";
 import NavBar from "../components/navbar";
-import Footer from "../components/Footer";
+
 import Modal from "../components/Modal";
+import Footer from "../components/Footer";
 import "../styles/globals.css";
 
 import { AppState, useTypedSelector } from "../store/_rootReducer";
@@ -61,48 +62,49 @@ const AppChild = ({ Component, pageProps }: AppProps) => {
                 }
             >
                 <NavBar />
-                {ModOn && AllowMod && <Modal />}
+                {/*                 {ModOn && AllowMod && <Modal />} */}
 
-                <StyledDiv>
-                    <Transition
-                        items={items}
-                        keys={(item: any) => item.id}
-                        config={config.slow}
-                        from={{
-                            position: "absolute",
-                            opacity: 0,
-                        }}
-                        initial={{ opacity: 0 }}
-                        enter={{
-                            position: "absolute",
-                            opacity: 1,
-                        }}
-                        leave={{
-                            position: "absolute",
-                            opacity: 0,
-                        }}
-                    >
-                        {(
-                            styles,
-                            {
-                                pageProps: animatedPageProps,
-                                Component: AnimatedComponent,
-                            },
-                            key: string
-                        ) => (
-                            <animated.div
-                                key={key}
-                                style={{
-                                    ...styles,
-                                    width: "100%",
-                                    height: "100%",
-                                }}
-                            >
+                <Transition
+                    items={items}
+                    keys={(item: any) => item.id}
+                    config={config.slow}
+                    from={{
+                        position: "absolute",
+                        opacity: 0,
+                    }}
+                    initial={{ opacity: 0 }}
+                    enter={{
+                        position: "absolute",
+                        opacity: 1,
+                    }}
+                    leave={{
+                        position: "absolute",
+                        opacity: 0,
+                    }}
+                >
+                    {(
+                        styles,
+                        {
+                            pageProps: animatedPageProps,
+                            Component: AnimatedComponent,
+                        },
+                        key: string
+                    ) => (
+                        <animated.div
+                            key={key}
+                            style={{
+                                ...styles,
+                                width: "100%",
+                                height: "100%",
+                            }}
+                        >
+                            <>
                                 <AnimatedComponent {...animatedPageProps} />
-                            </animated.div>
-                        )}
-                    </Transition>
-                </StyledDiv>
+                                <Footer />
+                            </>
+                        </animated.div>
+                    )}
+                </Transition>
             </NextChild>
         </>
     );
@@ -112,11 +114,5 @@ export default App;
 
 const NextChild = styled.div`
     width: 100vw;
-    height: 100%;
-`;
-
-const StyledDiv = styled.div`
-    width: 100%;
-    height: 100%;
     overflow: hidden;
 `;

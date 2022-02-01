@@ -3,11 +3,11 @@ import Head from "next/head";
 import styled from "styled-components";
 
 import Faq from "./faq";
-import styles from "../../styles/Home.module.css";
+import Header from "./header";
 
 const Sobre: NextPage = () => {
     return (
-        <div className={styles.container} data-test="comp-sobre">
+        <div>
             <Head>
                 <title>Kalloo English School</title>
                 <meta
@@ -17,7 +17,8 @@ const Sobre: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Main className={styles.main}>
+            <Main>
+                <Header />
                 <Faq />
             </Main>
         </div>
