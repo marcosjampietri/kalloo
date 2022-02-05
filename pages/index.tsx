@@ -5,7 +5,6 @@ import Image from "next/image";
 import Hero from "../components/home/hero";
 import Items from "../components/home/Items";
 import List from "../pages/contato/list";
-import Form from "../components/form";
 
 const Home: NextPage = () => {
     return (
@@ -22,7 +21,6 @@ const Home: NextPage = () => {
             <main>
                 <Hero />
                 <Items />
-                <Form />
                 <List />
             </main>
         </div>

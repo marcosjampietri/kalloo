@@ -40,6 +40,12 @@ const Section = styled.section`
     width: 100vw;
     height: 100vh;
     padding: 0px 20px;
+
+    background: linear-gradient(
+        165deg,
+        hsla(50, 100%, 100%, 1) 50%,
+        hsla(220, 30%, 70%, 1) 100%
+    );
 `;
 const W = styled.div`
     position: relative;

@@ -14,5 +14,6 @@ const Section = styled.section`
     width: 100%;
     height: 500px;
 
-    background: hsla(0, 0%, 79%, 1);
+    background: hsla(0, 0%, 100%, 1);
+    color: hsla(0, 0%, 90%, 1);
 `;

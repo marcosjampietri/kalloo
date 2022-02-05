@@ -31,6 +31,7 @@ const Links = () => {
                                     <br /> ENGLISH SCHOOL
                                 </h4>
                             </Text>
+                            <h4>Entre em Contato</h4>
                             <List>
                                 <Line>
                                     <div>
@@ -53,6 +54,7 @@ const Links = () => {
                                     <h5>+55 555-25252525</h5>
                                 </Line>
                             </List>
+                            <h4>Visite Nossas Redes</h4>
                             <Social>
                                 <a
                                     href="https://www.facebook.com/"
@@ -132,6 +134,10 @@ const BoxT = styled.div`
     backdrop-filter: blur(20px);
     background-color: hsla(220, 10%, 80%, 0.5);
     border-radius: 10px;
+
+    h4 {
+        margin: 18px 0px 8px;
+    }
 `;
 
 const Text = styled.div`
@@ -147,9 +153,8 @@ const Text = styled.div`
     }
 `;
 const List = styled.div`
-    border-bottom: 1px solid grey;
     border-top: 1px solid grey;
-    padding: 25px 0px 25px 0px;
+    padding: 12px 0px 25px 0px;
 `;
 const Line = styled.div`
     width: 100%;
@@ -166,7 +171,8 @@ const Line = styled.div`
     align-items: center;
 `;
 const Social = styled.div`
-    padding: 30px 10px;
+    padding: 12px 10px;
+    border-top: 1px solid grey;
 
     display: flex;
     justify-content: space-between;
@@ -178,7 +184,12 @@ const Social = styled.div`
     a {
         text-align: center;
         padding: 10px;
+        svg {
+            width: 25px;
+            height: 25px;
+        }
         h5 {
+            margin: 4px;
         }
     }
 `;
