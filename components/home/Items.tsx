@@ -53,7 +53,7 @@ export default Items;
 const Section = styled.section`
     width: 100%;
 
-    background: hsla(0, 0%, 100%, 1);
+    background: hsla(45, 100%, 65%, 1);
 `;
 
 const Content = styled.div`

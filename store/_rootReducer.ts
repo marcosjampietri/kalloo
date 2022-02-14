@@ -2,10 +2,12 @@ import { combineReducers } from "redux";
 import { useSelector, TypedUseSelectorHook } from "react-redux";
 
 import { modalReducer } from "./modal/modalReducer";
+import { navReducer } from "./nav/navReducer";
 
 
 const rootReducer = combineReducers({
     mod: modalReducer,
+    nav: navReducer,
 
 });
 

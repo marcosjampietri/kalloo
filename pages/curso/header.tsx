@@ -45,16 +45,23 @@ const Section = styled.section`
     justify-content: center;
     align-items: center;
 
-    background-color: hsla(0, 0%, 95%, 0.7);
-    background-image: url("https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80");
-    background-blend-mode: lighten;
+    background-image: linear-gradient(
+        90deg,
+        hsla(280, 50%, 15%, 1),
+        hsla(280, 50%, 35%, 1)
+    );
 `;
 const Text = styled.div`
     padding: 30px 0px;
 
+    h1 {
+        color: hsla(55, 100%, 100%, 1);
+    }
     h4 {
         line-height: 1.5em;
         text-align: justify;
         font-size: 12px;
+        color: white;
+        // color: hsla(55, 100%, 60%, 1);
     }
 `;
