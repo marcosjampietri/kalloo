@@ -100,6 +100,7 @@ const Links = styled.div`
 `;
 const Logo = styled.div`
     padding: 12px;
-    max-width: 30vh;
+    width: 30vh;
+    max-width: 180px;
     // padding-left: 0px;
 `;

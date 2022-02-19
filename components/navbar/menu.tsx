@@ -141,7 +141,7 @@ const MenuST = styled(animated.div)`
     z-index: 8;
     width: 100vw;
     height: 100vh;
-    padding-top: 10vh;
+    padding-top: 70px;
 
     background-image: linear-gradient(
         hsla(280, 100%, 15%, 1),
@@ -153,7 +153,7 @@ const MenuST = styled(animated.div)`
     pointer-events: none;
 `;
 const MenuItem = styled(animated.div)`
-    height: 30vh;
+    height: 25vh;
 
     pointer-events: all;
 `;

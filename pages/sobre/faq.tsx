@@ -60,7 +60,7 @@ const Section = styled.section`
 const Item = styled.div`
     border: 1px solid hsla(0, 0%, 50%, 0.3);
     h2 {
-        background-color: hsla(0, 0%, 50%, 0.1);
+        background-color: hsla(45, 100%, 65%, 1);
     }
     h4 {
         text-align: justify;

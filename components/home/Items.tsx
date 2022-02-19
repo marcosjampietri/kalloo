@@ -7,17 +7,17 @@ import { ImDisplay } from "react-icons/im";
 const Items = () => {
     const vantagens = [
         {
-            name: "Vantagem",
+            name: "LEGAL",
             text: "this is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever ",
             icon: <ImDisplay />,
         },
         {
-            name: "Vantagem",
+            name: "BONITO",
             text: "this is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever ",
             icon: <MdFaceRetouchingNatural />,
         },
         {
-            name: "Vantagem",
+            name: "INTELIGENTE",
             text: "this is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever ",
             icon: <GiDuality />,
         },
@@ -52,6 +52,7 @@ export default Items;
 
 const Section = styled.section`
     width: 100%;
+    padding: 5vh 0px 15vh;
 
     background: hsla(45, 100%, 65%, 1);
 `;
@@ -75,9 +76,11 @@ const Title = styled.div`
 
     h2 {
         font-size: 35px;
-
+        font-weight: bold;
         text-align: center;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
+
+        color: hsla(290, 100%, 25%, 1);
     }
 `;
 
@@ -89,19 +92,20 @@ const Card = styled.div`
 
     border-radius: 10px;
     box-shadow: 1px 1px 5px hsla(0, 0%, 50%, 0.3);
-    background: white;
+    background: hsla(0, 0%, 100%, 1);
+    // border: 1px solid hsla(330, 100%, 50%, 1);
 
     h2 {
         font-size: 30px;
 
         text-align: center;
-        color: hsla(212, 0%, 34%, 1);
+        color: hsla(330, 100%, 50%, 1);
     }
     p {
         font-size: 16px;
         text-align: center;
-        line-height: 1.5em;
-        color: grey;
+        line-height: 1.3em;
+        color: hsla(280, 100%, 40%, 1);
     }
 `;
 
@@ -110,13 +114,13 @@ const Icon = styled.div`
     width: 70px;
     height: 70px;
 
-    box-shadow: 1px 1px 5px hsla(0, 0%, 50%, 0.3);
+    box-shadow: 1px 1px 5px hsla(279, 100%, 31%, 0.3);
     border-radius: 50%;
-
+    background: hsla(280, 100%, 25%, 1);
     svg {
         padding: 16px;
         width: 100%;
         height: 100%;
-        fill: hsla(212, 0%, 34%, 1);
+        fill: hsla(279, 100%, 100%, 1);
     }
 `;

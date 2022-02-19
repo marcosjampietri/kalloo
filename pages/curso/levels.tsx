@@ -80,7 +80,7 @@ const Table = styled.ul`
     padding: 0px;
 
     li:nth-child(2n) {
-        background-color: hsla(0, 0%, 80%, 0.31);
+        background-color: hsla(45, 100%, 65%, 1);
         margin-bottom: 40px;
     }
     li:nth-child(2n + 1) {

@@ -18,11 +18,25 @@ import { below } from "../../styles/breakpoints";
 }
 
 const Links = () => {
+    const items = [
+        {
+            icon: <FiMapPin />,
+            value: "São Paulo, SP, Brasil",
+        },
+        {
+            icon: <FiMapPin />,
+            value: "São Paulo, SP, Brasil",
+        },
+        {
+            icon: <FiMapPin />,
+            value: "São Paulo, SP, Brasil",
+        },
+    ];
+
     return (
         <Section id="Contact">
             <Margin>
                 <div>
-                    {/*                     <Reveal> */}
                     <Outline>
                         <BoxT style={{ zIndex: "1" }}>
                             <Text>
@@ -86,7 +100,6 @@ const Links = () => {
                             <ServImg src="https://images.unsplash.com/photo-1610552254576-9500a3e99999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1917&q=80" />
                         </BoxI>
                     </Outline>
-                    {/*                     </Reveal> */}
                 </div>
             </Margin>
         </Section>
@@ -121,7 +134,7 @@ const Outline = styled.div`
     align-items: center;
     flex-wrap: wrap;
 
-    outline: 2px solid hsla(0, 0%, 0%, 0.1);
+    outline: 2px solid hsla(280, 100%, 25%, 0.1);
     outline-offset: -40px;
 
     padding: 35px 0px;
@@ -134,6 +147,7 @@ const BoxT = styled.div`
     backdrop-filter: blur(20px);
     background-color: hsla(220, 10%, 80%, 0.5);
     border-radius: 10px;
+    color: hsl(280, 100%, 25%);
 
     h4 {
         margin: 18px 0px 8px;

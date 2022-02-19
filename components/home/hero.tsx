@@ -3,19 +3,45 @@ import Image from "next/image";
 import { animated, useTransition, config } from "react-spring";
 import useScrollTo from "react-spring-scroll-to-hook";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { FaFacebook, FaInstagramSquare, FaYoutube } from "react-icons/fa";
 import { Margin } from "../../styles/globalSC";
 
 const Hero = () => {
     const { scrollTo }: any = useScrollTo(config.slow);
+
+    const socials = [
+        {
+            name: "facebook",
+
+            icon: <FaFacebook />,
+            url: "/icons/facebook.svg",
+        },
+        {
+            name: "instagram",
+
+            icon: <FaInstagramSquare />,
+            url: "/icons/instagram.svg",
+        },
+        {
+            name: "youtube",
+
+            icon: <FaYoutube />,
+            url: "/icons/youtube.svg",
+        },
+    ];
+
     return (
         <Section>
             <Margin>
                 <W>
                     <Text>
+                        <h3>
+                            <span>KALLOO</span> - egnlish school
+                        </h3>
                         <Image
                             src="/Kalloo-Symbol.svg"
-                            width="0"
-                            height="0"
+                            width="50"
+                            height="50"
                             alt="logo da escola Kalloo"
                         />
                         <h1>
@@ -41,15 +67,27 @@ const Hero = () => {
                         </CTA>
                     </Text>
 
-                    <Background
+                    {/*                     <Background
                         src="/Kalloo-Symbol.svg"
                         alt="rapazes na escola restudando e recebendo aulas de inglês"
-                    />
-                    {/*                     <Background
+                    /> */}
+                    <Background
                         src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
                         alt="rapazes na escola restudando e recebendo aulas de inglês"
-                    /> */}
+                    />
                 </W>
+                <Social>
+                    {socials.map(({ name, icon, url }, index) => (
+                        <a
+                            href={url}
+                            target="_blank"
+                            rel="noreferrer"
+                            key={index}
+                        >
+                            {icon}
+                        </a>
+                    ))}
+                </Social>
             </Margin>
         </Section>
     );
@@ -60,7 +98,7 @@ export default Hero;
 const Section = styled.section`
     width: 100vw;
     min-height: 100vh;
-    padding: 0px 20px;
+    padding: 70px 20px 0px;
 
     background-image: linear-gradient(
         165deg,
@@ -74,7 +112,10 @@ const Section = styled.section`
 const W = styled.div`
     width: 100%;
     height: 100%;
-    padding-top: 100px;
+    // padding-top: 100px;
+
+    outline: 1px solid hsla(335, 100%, 50%, 0.2);
+    outline-offset: -20px;
 
     display: flex;
     justify-content: space-between;
@@ -89,15 +130,11 @@ const Text = styled.div`
     // flex: 1 1 350px;
     width: 100%;
     max-width: 650px;
-    min-width: 250px;
-    margin: 15px;
+    min-width: 200px;
+    margin: 35px 15px 35px;
 
-     {
-        /*     background: hsla(0, 0%, 100%, 0.5); */
-    }
-     {
-        /*     backdrop-filter: blur(10px); */
-    }
+    // background: hsla(0, 0%, 100%, 0.5);
+    backdrop-filter: blur(10px);
 
     display: flex;
     flex-direction: column;
@@ -106,11 +143,12 @@ const Text = styled.div`
 
     img {
         filter: drop-shadow(-1px 1px 3px hsla(280, 100%, 30%, 0.7));
-        padding: 4px;
+        padding: 20px;
+        display: none !important;
     }
 
     h1 {
-        margin: 0px 0px 32px;
+        margin: 0px 0px 32px -3px;
         font-size: clamp(25px, 9vw, 62px);
         color: #65009c;
         font-weight: bold;
@@ -133,13 +171,13 @@ const Text = styled.div`
     }
 
     h2 {
+        width: 88%;
         font-size: 20px;
         font-weight: 300;
-        margin: 0px;
-        padding: 4px;
-        padding-left: 16px;
-        // text-align: justify;
-        margin: 0px 0px 20px;
+
+        padding-left: 14px;
+        text-align: justify;
+        margin: 0px 0px 40px;
 
         line-height: 1.2em;
         color: hsla(335, 0%, 30%, 1);
@@ -147,17 +185,25 @@ const Text = styled.div`
 
         // background: #fcd545;
     }
+    h3 {
+        font-size: 16px;
+        margin: 0px 0px 25px;
+        font-weight: bold;
+        span {
+            font-weight: bold;
+            // font-size: 16px;
+        }
+
+        color: hsla(280, 100%, 30%, 1);
+    }
 `;
 const Background = styled.img`
     flex: 1 1 350px;
     width: 0%;
     height: 50vh;
-    margin: 20px auto;
-
-     {
-        /*     box-shadow: 4px 4px 20px hsla(0, 0%, 0%, 0.5); */
-    }
-    object-fit: fit;
+    margin: 0px auto;
+    box-shadow: 4px 4px 20px hsla(0, 0%, 0%, 0.5);
+    object-fit: cover;
     border-radius: 10px;
     opacity: 1;
     z-index: 2;
@@ -166,10 +212,12 @@ const Background = styled.img`
 `;
 
 const CTA = styled.div`
+    width: 80vw;
+    max-width: 300px;
     div {
-        padding: 30px 20px;
+        padding: 25px 0px;
         margin: 0px 0px 0px -8px;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
         font-weight: 200;
 
@@ -191,6 +239,34 @@ const CTA = styled.div`
 
         svg {
             margin: 0px 4px;
+        }
+    }
+`;
+
+const Social = styled.div`
+    width: 100%;
+    height: 100%;
+    padding: 40px 15px;
+
+    display: flex;
+    // justify-content: end;
+
+    a {
+        margin: 0px 20px 0px 0px;
+
+        // border: 2px solid black;
+        // border-radius: 5px;
+
+        // background: #65009c;
+        img {
+            // filter: grayscale(100%);
+            // mix-blend-mode: luminosity;
+        }
+
+        svg {
+            width: 35px;
+            height: 35px;
+            fill: #65009c;
         }
     }
 `;
