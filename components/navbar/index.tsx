@@ -34,9 +34,9 @@ const Navbar = () => {
                         <Link>
                             <Logo>
                                 <Image
-                                    src="/Kalloo-Horiz-Color.svg"
+                                    src="/Logo-final.png"
                                     width="180"
-                                    height="70"
+                                    height="55"
                                     alt="logo"
                                 />
                             </Logo>
@@ -102,5 +102,10 @@ const Logo = styled.div`
     padding: 12px;
     width: 30vh;
     max-width: 180px;
+
     // padding-left: 0px;
+
+    .img {
+        object-fit: cover;
+    }
 `;

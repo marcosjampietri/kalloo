@@ -12,22 +12,19 @@ const Hero = () => {
     const socials = [
         {
             name: "facebook",
-
             icon: <FaFacebook />,
-            url: "/icons/facebook.svg",
+            url: "https://www.facebook.com/kallooenglishschool-107130884976780",
         },
         {
             name: "instagram",
-
             icon: <FaInstagramSquare />,
-            url: "/icons/instagram.svg",
+            url: "https://www.instagram.com/kallooenglishschool/",
         },
-        {
-            name: "youtube",
-
-            icon: <FaYoutube />,
-            url: "/icons/youtube.svg",
-        },
+        // {
+        //     name: "youtube",
+        //     icon: <FaYoutube />,
+        //     url: "/icons/youtube.svg",
+        // },
     ];
 
     return (
@@ -114,9 +111,6 @@ const W = styled.div`
     height: 100%;
     // padding-top: 100px;
 
-    outline: 1px solid hsla(335, 100%, 50%, 0.2);
-    outline-offset: -20px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -151,7 +145,7 @@ const Text = styled.div`
         margin: 0px 0px 32px -3px;
         font-size: clamp(25px, 9vw, 62px);
         color: #65009c;
-        font-weight: bold;
+        // font-weight: bold;
         // line-height: 1.5em;
         // letter-spacing: 6px;
 

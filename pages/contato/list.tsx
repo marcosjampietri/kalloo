@@ -12,6 +12,8 @@ import {
     FiVoicemail,
 } from "react-icons/fi";
 
+import { BsWhatsapp } from "react-icons/bs";
+
 import { below } from "../../styles/breakpoints";
 {
     /* import { Reveal } from "../reveal"; */
@@ -58,20 +60,20 @@ const Links = () => {
                                         <FiMail />
                                     </div>
                                     <a href="mailto:kalloo@gmail.com">
-                                        <h5>kalloo@gmail.com</h5>
+                                        <h5>contato@kalooenglish.com</h5>
                                     </a>
                                 </Line>
                                 <Line>
                                     <div>
-                                        <FiPhone />
+                                        <BsWhatsapp />
                                     </div>
-                                    <h5>+55 555-25252525</h5>
+                                    <h5>+55 (11) 93939-9152</h5>
                                 </Line>
                             </List>
                             <h4>Visite Nossas Redes</h4>
                             <Social>
                                 <a
-                                    href="https://www.facebook.com/"
+                                    href="https://www.facebook.com/kallooenglishschool-107130884976780"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
@@ -79,7 +81,7 @@ const Links = () => {
                                     <h5>facebook</h5>
                                 </a>
                                 <a
-                                    href="https://www.instagram.com/"
+                                    href="https://www.instagram.com/kallooenglishschool/"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
@@ -87,7 +89,7 @@ const Links = () => {
                                     <h5>instagram</h5>
                                 </a>
                                 <a
-                                    href="https://www.linkedin.com/"
+                                    href="https://www.linkedin.com/in/catherine-wajcenberg-01763790/"
                                     target="_blank"
                                     rel="noreferrer"
                                 >

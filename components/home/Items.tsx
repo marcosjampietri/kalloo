@@ -7,18 +7,18 @@ import { ImDisplay } from "react-icons/im";
 const Items = () => {
     const vantagens = [
         {
-            name: "LEGAL",
-            text: "this is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever ",
+            name: "MATERIAL 100% VIRTUAL E INTERATIVO",
+            text: "Dê adeus aos livros e cadernos físicos. Nosso material foi desenvolvido totalmente para o ambiente virtual",
             icon: <ImDisplay />,
         },
         {
-            name: "BONITO",
-            text: "this is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever ",
+            name: "'MATCH' COM A(O) TEACHER",
+            text: "Selecionamos o professor que mais tem a ver com você, de acordo com a sua personalidade e os seus objetivos",
             icon: <MdFaceRetouchingNatural />,
         },
         {
-            name: "INTELIGENTE",
-            text: "this is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever  is the best advantage ever ",
+            name: "PLATAFORMA COLABORATIVA",
+            text: "A plataforma Kalloo é sempre atualizada e aperfeiçoada pelos nosso professores - o que permite que o nosso material esteja em constante evolução ",
             icon: <GiDuality />,
         },
     ];
@@ -29,8 +29,8 @@ const Items = () => {
                 <Content>
                     <Title>
                         <h2>
-                            Na falta de um motivo, te damos três para estudar na
-                            KALLOO
+                            Na falta de um motivo, te damos <span> três </span>
+                            para estudar na KALLOO
                         </h2>
                     </Title>
                     <Cards>
@@ -54,7 +54,7 @@ const Section = styled.section`
     width: 100%;
     padding: 5vh 0px 15vh;
 
-    background: hsla(45, 100%, 65%, 1);
+    background: hsla(45, 100%, 100%, 1);
 `;
 
 const Content = styled.div`
@@ -76,27 +76,33 @@ const Title = styled.div`
 
     h2 {
         font-size: 35px;
-        font-weight: bold;
+        line-height: 1.5em;
         text-align: center;
         letter-spacing: 0px;
 
         color: hsla(290, 100%, 25%, 1);
+
+        span {
+            background: hsla(290, 100%, 25%, 1);
+            color: hsla(290, 100%, 100%, 1);
+        }
     }
 `;
 
 const Card = styled.div`
     width: 100%;
+    height: 300px;
     max-width: 280px;
     margin: 16px;
     padding: 16px;
 
     border-radius: 10px;
-    box-shadow: 1px 1px 5px hsla(0, 0%, 50%, 0.3);
+    box-shadow: 1px 1px 10px hsla(0, 0%, 50%, 0.4);
     background: hsla(0, 0%, 100%, 1);
     // border: 1px solid hsla(330, 100%, 50%, 1);
 
     h2 {
-        font-size: 30px;
+        font-size: 20px;
 
         text-align: center;
         color: hsla(330, 100%, 50%, 1);
@@ -105,7 +111,7 @@ const Card = styled.div`
         font-size: 16px;
         text-align: center;
         line-height: 1.3em;
-        color: hsla(280, 100%, 40%, 1);
+        color: hsla(280, 100%, 0%, 1);
     }
 `;
 

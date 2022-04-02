@@ -18,7 +18,7 @@ const Contato: NextPage = () => {
 
             <main>
                 <List />
-                <Map />
+                {/* <Map /> */}
             </main>
         </div>
     );
