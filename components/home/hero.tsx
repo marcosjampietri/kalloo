@@ -33,7 +33,7 @@ const Hero = () => {
                 <W>
                     <Text>
                         <h3>
-                            <span>KALLOO</span> - egnlish school
+                            <span>KALLOO</span> - english school
                         </h3>
                         <Image
                             src="/Kalloo-Symbol.svg"
@@ -47,9 +47,10 @@ const Hero = () => {
                             <br />
                         </h1>
                         <h2>
-                            A melhor escola de inglês do mundo de inglês do
-                            mundo A melhor escola A melhor escola de inglês do
-                            mundo A melhor escola de inglês do mundo{" "}
+                            A Kalloo é a primeira escola de inglês do Brasil com
+                            a proposta de oferecer um curso totalmente focado na
+                            experiência do aluno, com material inteligente e
+                            acompanhamento 100% humanizado.
                         </h2>
                         <CTA>
                             <div
@@ -143,7 +144,7 @@ const Text = styled.div`
 
     h1 {
         margin: 0px 0px 32px -3px;
-        font-size: clamp(25px, 9vw, 62px);
+        font-size: clamp(45px, 9vw, 62px);
         color: #65009c;
         // font-weight: bold;
         // line-height: 1.5em;
