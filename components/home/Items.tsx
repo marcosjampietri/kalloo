@@ -31,15 +31,15 @@ const Items = () => {
                     <Title>
                         <h2>
                             Na falta de <b>um</b> motivo, te damos
-                            <span> três </span>
+                            <span className="a"> três </span>
                             para estudar na
-                            <spam>
+                            <span className="b">
                                 <img
                                     src="/Logo-final.png"
                                     alt="Kalloo"
                                     className="kalloo"
                                 />
-                            </spam>
+                            </span>
                         </h2>
                     </Title>
                     <Cards>
@@ -80,7 +80,7 @@ const Cards = styled.div`
 
 const Title = styled.div`
     width: 100%;
-    max-width: 610px;
+    max-width: 650px;
     margin: 0px auto 50px;
 
     h2 {
@@ -91,12 +91,16 @@ const Title = styled.div`
 
         color: black;
 
-        span {
+        .a {
             background: #8c52ff;
+            display: inline-block;
+            font-weight: 900;
+            padding: 2px 10px;
+            margin: 0px 10px;
             color: hsla(290, 100%, 100%, 1);
         }
 
-        spam {
+        .b {
             position: relative;
             top: 5px;
             height: 30px;
