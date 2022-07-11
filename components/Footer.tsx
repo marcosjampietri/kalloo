@@ -14,6 +14,10 @@ const Section = styled.section`
     width: 100%;
     height: 500px;
 
-    background: hsla(280, 100%, 18%, 1);
+    background-image: linear-gradient(
+        90deg,
+        hsla(270, 100%, 40%, 1),
+        hsla(260, 100%, 66%, 1)
+    );
     color: hsla(0, 0%, 90%, 1);
 `;

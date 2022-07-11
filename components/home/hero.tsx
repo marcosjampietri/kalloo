@@ -32,18 +32,14 @@ const Hero = () => {
             <Margin>
                 <W>
                     <Text>
-                        <h3>
-                            <span>KALLOO</span> - english school
-                        </h3>
                         <Image
                             src="/Kalloo-Symbol.svg"
-                            width="50"
-                            height="50"
+                            width="70"
+                            height="60"
                             alt="logo da escola Kalloo"
                         />
                         <h1>
-                            Dê <span>&apos;match&apos;</span> com o professor de
-                            inglês
+                            A gente escolhe aquele teacher que é a sua cara.
                             <br />
                         </h1>
                         <h2>
@@ -59,7 +55,7 @@ const Hero = () => {
                                     scrollTo(document.querySelector("#Contact"))
                                 }
                             >
-                                Entre em contato!
+                                Agende sua aula experimental!
                                 <MdOutlineArrowForwardIos />
                             </div>
                         </CTA>
@@ -70,7 +66,7 @@ const Hero = () => {
                         alt="rapazes na escola restudando e recebendo aulas de inglês"
                     /> */}
                     <Background
-                        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                        src="/student.jpg"
                         alt="rapazes na escola restudando e recebendo aulas de inglês"
                     />
                 </W>
@@ -144,8 +140,8 @@ const Text = styled.div`
 
     h1 {
         margin: 0px 0px 32px -3px;
-        font-size: clamp(45px, 9vw, 62px);
-        color: #65009c;
+        font-size: clamp(35px, 7.5vw, 50px);
+        color: #8c52ff;
         // font-weight: bold;
         // line-height: 1.5em;
         // letter-spacing: 6px;
@@ -176,7 +172,7 @@ const Text = styled.div`
 
         line-height: 1.2em;
         color: hsla(335, 0%, 30%, 1);
-        border-left: 4px solid hsla(335, 100%, 50%, 1);
+        border-left: 4px solid #8c52ff;
 
         // background: #fcd545;
     }
@@ -195,13 +191,16 @@ const Text = styled.div`
 const Background = styled.img`
     flex: 1 1 350px;
     width: 0%;
-    height: 50vh;
+    height: 40vh;
     margin: 0px auto;
-    box-shadow: 4px 4px 20px hsla(0, 0%, 0%, 0.5);
+    // box-shadow: 4px 4px 20px hsla(0, 0%, 0%, 0.5);
     object-fit: cover;
-    border-radius: 10px;
+    // transform: scale(1.1) translate(-10%, 0);
+
+    border-radius: 5px;
     opacity: 1;
     z-index: 2;
+    mix-blend-mode: darken;
 
     // filter: brightness(190%) grayscale(50%) contrast(70%);
 `;
@@ -217,7 +216,7 @@ const CTA = styled.div`
         font-weight: 200;
 
         color: hsla(279, 100%, 100%, 1);
-        background: hsla(335, 100%, 50%, 1);
+        background: #8c52ff;
         // background-image: linear-gradient(
         //     0deg,
         //     #65009c,
@@ -261,7 +260,7 @@ const Social = styled.div`
         svg {
             width: 35px;
             height: 35px;
-            fill: #65009c;
+            fill: #8c52ff;
         }
     }
 `;

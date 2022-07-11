@@ -87,7 +87,7 @@ const Width = styled.div`
     align-items: center;
 `;
 const Links = styled.div`
-    color: #65009c;
+    color: #8c52ff;
 
     a {
         font-weight: bold;

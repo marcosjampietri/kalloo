@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 import { Margin } from "../../styles/globalSC";
 import { MdFaceRetouchingNatural } from "react-icons/md";
 import { GiDuality } from "react-icons/gi";
@@ -29,8 +30,16 @@ const Items = () => {
                 <Content>
                     <Title>
                         <h2>
-                            Na falta de um motivo, te damos <span> três </span>
-                            para estudar na KALLOO
+                            Na falta de <b>um</b> motivo, te damos
+                            <span> três </span>
+                            para estudar na
+                            <spam>
+                                <img
+                                    src="/Logo-final.png"
+                                    alt="Kalloo"
+                                    className="kalloo"
+                                />
+                            </spam>
                         </h2>
                     </Title>
                     <Cards>
@@ -71,20 +80,38 @@ const Cards = styled.div`
 
 const Title = styled.div`
     width: 100%;
-    max-width: 600px;
+    max-width: 610px;
     margin: 0px auto 50px;
 
     h2 {
-        font-size: 35px;
+        font-size: 38px;
         line-height: 1.5em;
         text-align: center;
         letter-spacing: 0px;
 
-        color: hsla(290, 100%, 25%, 1);
+        color: black;
 
         span {
-            background: hsla(290, 100%, 25%, 1);
+            background: #8c52ff;
             color: hsla(290, 100%, 100%, 1);
+        }
+
+        spam {
+            position: relative;
+            top: 5px;
+            height: 30px;
+            display: inline-block;
+            overflow: hidden;
+            margin: 0px 15px;
+
+            .kalloo {
+                height: 45px;
+                object-fit: cover;
+            }
+        }
+
+        b {
+            font-weight: 900;
         }
     }
 `;
@@ -122,7 +149,7 @@ const Icon = styled.div`
 
     box-shadow: 1px 1px 5px hsla(279, 100%, 31%, 0.3);
     border-radius: 50%;
-    background: hsla(280, 100%, 25%, 1);
+    background: #8c52ff;
     svg {
         padding: 16px;
         width: 100%;

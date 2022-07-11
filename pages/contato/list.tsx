@@ -149,7 +149,7 @@ const BoxT = styled.div`
     backdrop-filter: blur(20px);
     background-color: hsla(220, 10%, 80%, 0.5);
     border-radius: 10px;
-    color: hsl(280, 100%, 25%);
+    color: #8c52ff;
 
     h4 {
         margin: 18px 0px 8px;

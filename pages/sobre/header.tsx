@@ -40,8 +40,8 @@ const Section = styled.section`
 
     background-image: linear-gradient(
         90deg,
-        hsla(280, 50%, 15%, 1),
-        hsla(280, 50%, 35%, 1)
+        hsla(270, 100%, 40%, 1),
+        hsla(260, 100%, 66%, 1)
     );
 `;
 const Text = styled.div`

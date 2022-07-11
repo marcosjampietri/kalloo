@@ -144,8 +144,8 @@ const MenuST = styled(animated.div)`
     padding-top: 70px;
 
     background-image: linear-gradient(
-        hsla(280, 100%, 15%, 1),
-        hsla(280, 100%, 35%, 1)
+        hsla(270, 100%, 50%, 1),
+        hsla(260, 100%, 70%, 1)
     );
 
     // display: flex;
