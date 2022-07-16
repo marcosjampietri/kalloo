@@ -67,7 +67,9 @@ const Links = () => {
                                     <div>
                                         <BsWhatsapp />
                                     </div>
-                                    <h5>+55 (11) 93939-9152</h5>
+                                    <a href="https://api.whatsapp.com/send?phone=5511970644316&text=Olá. Gostaria de mais informações sobre o curso">
+                                        <h5>+55 11 97064-4316</h5>
+                                    </a>
                                 </Line>
                             </List>
                             <h4>Visite Nossas Redes</h4>
